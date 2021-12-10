@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GupShap Chat-room</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="/SK_PHP_PROJECTS/PHP_Chatting_room/js/index.js"></script>
+    <link rel="stylesheet" href="/SK_PHP_PROJECTS/PHP_Chatting_room/css/style.css">
+    <link rel="stylesheet" href="/SK_PHP_PROJECTS/PHP_Chatting_room/css/index.css">
+</head>
+
+<body>
+    <header id="main">
+        <h1><a href="/SK_PHP_PROJECTS/PHP_Chatting_room/">GupShap Chat-room</a></h1>
+        <div class="hideshownavbar" id="hideshownavbar">
+            <i class="fas fa-align-justify"></i>
+        </div>
+        <nav id="navbar">
+            <a href="#main" style="font-weight: bold;">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div id="home">
+        <section>
+            <aside>
+                <img src="https://unblast.com/wp-content/uploads/2020/05/Group-Chat-Illustration.jpg">
+            </aside>
+            <div>
+                <h1>Create and Share Chatroom</h1>
+                <p>Create an Chatroom just filling some basic information like your name, chatroom name and
+                    authentication key</p>
+                <button><a href="/SK_PHP_PROJECTS/PHP_Chatting_room/home.php">Create Chatroom</a></button>
+            </div>
+        </section>
+    </div>
+    <hr>
+    <div id="about">
+        <section>
+            <h1>About Us</h1>
+            <div class="details">
+                <div class="detailcolumn">
+                    <h2>About Developer</h2>
+                    <h1>My name is <span id="developer">Shivkumar Chauhan</span></h1>
+                    <h4>(Computer Science Engineer)</h4>
+                </div>
+                <div class="detailcolumn">
+                    <h2>About GupShap Chatroom</h2>
+                    <ol type="I">
+                        <li>
+                            This website is created using pure HTML,CSS,JavaScript for front-end and PHP,MySQL for
+                            Back-end
+                        </li>
+                        <li>
+                            On this website may users can chat together
+
+                        </li>
+                        <li>
+                            Only create and share logic for collaboration
+
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="details">
+                <div class="detailcolumn">
+                    <h2>How to Use</h2>
+                    <ol>
+                        <li>
+                            click on the <button>Create Chatroom</button> button given on home page
+                        </li>
+                        <li>
+                            fill your name, enter apropriate chatroom name and authentication password
+                        </li>
+                        <li>Now chatroom is created, share the link to your friends and coleegs</li>
+                        <li>
+                            tell thenn to enter their name and password(that you have created for chatroom), and they
+                            will get joined
+                        </li>
+                        <li>
+                            And start chatting
+                        </li>
+                    </ol>
+                </div>
+                <div class="detailcolumn">
+                    <h2>Terms and Conditions</h2>
+                    <ol>
+                        <li>
+                            Chatroom creater can see the IP address of the users for security purpose (Because many of
+                            the users not give thier correct name)
+                        </li>
+                        <li>
+                            Only Chatroom creater can delete the Chatroom till the messages are on are website at that
+                            link
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </div>
+    <hr>
+    <div id="contact">
+        <section>
+            <div class="contactesection">
+                <div class="contact">
+                    <img src="https://images.pexels.com/photos/2111759/pexels-photo-2111759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="">
+                </div>
+                <form action="contact.php" method="post">
+                    <h1>Contact Us</h1>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <input type="number" name="phone" id="phone" placeholder="Enter Your Number">
+                    <textarea name="suggetion" id="suggetion" placeholder="Give Reason/Suggestion"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </section>
+
+    </div>
+    <footer>
+        <div><strong>Desclaimer</strong> : This website is created for project purpose, main purpose is to create an chatroom system for
+            users, Please support developer if any mistake in conaint of the website i.e contact to developer or plese
+            try to ignore it</div>
+        ALL RIGHT ARE RESERVED
+        <div class="author">Created by: Shivkumar Chauhan</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;1,200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.5s;
+    scroll-behavior: smooth;
+    outline: none;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background: #222f3e;
+    color: aliceblue;
+    min-height: 100vh;
+}
+
+.alert{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    width: 75%;
+    margin-top:20px;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    padding:5px 20px;
+    border-radius: 20px;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+@media (max-width:868px) {
+    .alert{
+        margin-top:10px;
+        width: 98%;
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+.author{
+    position: fixed;
+    right: 10px;
+    bottom: 1px;
+}
+footer{
+    background-color: #2d3436;
+    text-align: center;
+    padding: 10px;
+}
+footer div{
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+

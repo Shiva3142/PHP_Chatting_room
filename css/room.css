@@ -1,0 +1,302 @@
+body {
+    background: url('https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.right,
+.left {
+    border-radius: 8px;
+    background: aquamarine;
+    display: inline-block;
+    min-width: 50%;
+    max-width: 70%;
+    margin: 5px;
+    padding: 12px;
+    clear: both;
+    /* overflow-x: auto; */
+    color: black;
+    position: relative;
+}
+
+.left::before {
+    content: "";
+    position: absolute;
+    background: aquamarine;
+    width: 16px;
+    height: 16px;
+    left: -8px;
+    bottom: 10px;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+.right::after {
+    content: "";
+    position: absolute;
+    background: aquamarine;
+    width: 16px;
+    height: 16px;
+    right: -8px;
+    bottom: 10px;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+.right {
+    float: right;
+}
+
+input {
+    width: 70vw;
+    font: 30px bold;
+}
+
+.message p {
+    font-size: 90%;
+    word-wrap: break-word;
+}
+
+.message span {
+    font-size: 80%;
+    float: right;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 5px 30px;
+    border-bottom: 1px solid gray;
+    background: #2f3542;
+}
+
+header button {
+    /* font-size: 0px ; */
+    padding: 5px;
+}
+
+.chatcontainer {
+    border: 1px solid #2f3640;
+    margin: 5px;
+    min-height: 88vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.chatcontainer h1 {
+    background: transparent;
+    color: black;
+}
+
+.userslistcontainer {
+    background: whitesmoke;
+}
+
+#userlists {
+    border: 1px solid white;
+    /* margin: 5px; */
+    color: black;
+    height: 83vh;
+    overflow-y: auto;
+}
+
+.userslistcontainer>h2 {
+    color: black;
+    padding: 10px 20px;
+}
+
+.userdetails {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #0d6efd;
+    margin: 5px;
+    padding: 15px;
+}
+
+.userdetails p {
+    font-size: 80%;
+}
+
+.chatroomcontainer {
+    border: 1px solid darkslategray;
+    /* margin: 5px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.message_container {
+    /* border: 1px solid white; */
+    /* margin: 5px; */
+    height: 81vh;
+    background: #b2bec3;
+    background: url("https://img2.wallspic.com/previews/3/2/1/7/0/107123/107123-drawing-ocean-green-underwater-turquoise-x750.jpg") no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.messagesendercontainer form {
+    /* width: 100%; */
+    border: 2px solid aqua;
+    display: grid;
+    grid-template-columns: 20fr 1fr;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+}
+
+form button {
+    font-size: 30px;
+    background: aqua;
+    border: none;
+}
+
+#userslisttoggle i {
+    display: none;
+}
+
+.userslistcontainer span {
+    display: none;
+}
+
+
+@media (max-width:868px) {
+
+    .right,
+    .left {
+        border-radius: 8px;
+        min-width: 50%;
+        max-width: 75%;
+        padding: 10px;
+    }
+
+    .message h4 {
+        font-size: 80%;
+    }
+
+    .message p {
+        font-size: 70%;
+    }
+
+    .message span {
+        font-size: 70%;
+    }
+
+    header {
+        padding: 5px;
+        font-size: 70%;
+    }
+
+    header button {
+        /* font-size: 0px ; */
+        padding: 2px;
+    }
+
+    .chatcontainer {
+        width: 100%;
+        margin: 0px;
+        display: flex;
+    }
+
+    .chatcontainer h1 {
+        font-size: 25px;
+    }
+
+
+
+    .userslistcontainer {
+        display: none;
+        width: 100%;
+        height: 90vh;
+    }
+
+    #userlists {
+        border: 1px solid white;
+        /* margin: 5px; */
+        color: black;
+        height: 83vh;
+        overflow-y: auto;
+    }
+
+    .userslistcontainer>h2 {
+        color: black;
+        padding: 10px 20px;
+    }
+
+    .userdetails {
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid #0d6efd;
+        margin: 5px;
+        padding: 15px;
+    }
+
+    .userdetails p {
+        font-size: 80%;
+    }
+
+
+
+
+
+
+
+
+    .message_container {
+        padding: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    form button {
+        font-size: 30px;
+        padding: 0 15px;
+    }
+
+    #userslisttoggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    #userslisttoggle i {
+        display: block;
+        color: black;
+        font-size: 120%;
+    }
+
+    .userslistcontainer span {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+}

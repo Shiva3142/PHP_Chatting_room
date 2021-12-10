@@ -1,0 +1,272 @@
+body {
+    background: #222f3e;
+    color: aliceblue;
+    min-height: 100vh;
+}
+
+header {
+    width: 80%;
+    border-bottom: 3px solid antiquewhite;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    align-items: center;
+    font-size: 110%;
+    margin: 10px auto;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: aliceblue;
+}
+
+a:active {
+    color: white;
+    font-weight: bold;
+}
+
+.hideshownavbar {
+    display: none;
+    cursor: pointer;
+}
+
+#home {
+    min-height: 90vh;
+}
+
+#about {
+    min-height: 100vh;
+    /* padding: 50px; */
+}
+
+#contact {
+    min-height: 90vh;
+    /* padding: 50px; */
+}
+
+#home,
+#about,
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+#home section,
+#about section,
+#contact section {
+    /* border: 1px solid antiquewhite; */
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#home button a {
+    color: black;
+    padding: 10px;
+}
+
+#home button {
+    font-size: 150%;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+aside img {
+    width: 400px;
+    border-radius: 50px;
+}
+
+#home section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home section div h1 {
+    font-size: 35px;
+}
+
+#home section div p {
+    text-align: center;
+    margin: 10px;
+}
+
+#about section{
+    flex-direction: column;
+}
+#about section>h1{
+    font-size: 50px;
+}
+.details{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.detailcolumn{
+    /* border: 1px solid aquamarine; */
+    border-radius: 50px;
+    background: #dff9fb;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+}
+ol{
+    width: 80%;
+}
+.detailcolumn h2{
+    color: #130f40;
+    margin: 20px;
+}
+.detailcolumn h1{
+    margin-top: 20px;
+}
+
+
+
+
+.contactesection {
+    display: flex;
+    padding: 10px;
+    border: 1px solid aliceblue;
+}
+
+
+#contact section div {
+    min-width: 50%;
+
+}
+
+#contact section form {
+    min-width: 50%;
+    /* border: 1px solid aliceblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+input {
+    margin: 20px;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: aliceblue;
+}
+
+textarea {
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: aliceblue;
+}
+
+button[type='submit'] {
+    border-radius: 20px;
+    background: aqua;
+    width: 50%;
+    padding: 5px;
+    margin: 10px 10px;
+    margin-left: auto;
+    font-size: 150%;
+
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact img {
+    height: 50vh;
+}
+
+form h1 {
+    text-align: center;
+    color: antiquewhite;
+    margin: 30px;
+}
+
+
+
+@media (max-width:868px) {
+
+    #home section,
+    #about section,
+    #contact section {
+        margin: 10px;
+    }
+
+    #home section div h1 {
+        font-size: 30px;
+    }
+
+    #home section div p {
+        font-size: 13px;
+    }
+
+
+    .details{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    aside img {
+        width: 80%;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        /* position: relative; */
+        margin: 20px;
+        font-size: 120%;
+        /* border: 1px solid aliceblue; */
+    }
+
+    header {
+        width: 95%;
+        font-size: 90%;
+        display: grid;
+        grid-template-columns: 13fr 1fr;
+        /* justify-content: space-between; */
+    }
+
+    .hideshownavbar {
+        display: flex;
+        font-size: 30px;
+    }
+
+    .contactesection{
+        width: 90%;
+    }
+    .contact {
+        display: none;
+    }
+
+    #contact section form {
+        width: 120%;
+    }
+}
