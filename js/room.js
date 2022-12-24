@@ -20,6 +20,9 @@ async function getMessage() {
             if (result.id != id) {
                 let messageContainer = document.getElementsByClassName('message_container')[0];
                 let isscrolltime = (messageContainer.scrollHeight - messageContainer.scrollTop - messageContainer.clientHeight) == 0 || (messageContainer.scrollHeight - messageContainer.scrollTop - messageContainer.clientHeight) < 150;
+
+
+                
                 messageContainer.innerHTML = messageContainer.innerHTML + result.result_html;
                 if (isscrolltime) {
                     messageContainer.scrollTop = messageContainer.scrollHeight;
